@@ -2,17 +2,21 @@ import { useState } from 'react';
 import fetchAuth from '../utilities/fetchAuth';
 import constants from '../utilities/constants';
 
-function PasswordForm() {    
+function PasswordForm(props) {    
     const [value, setValue] = useState("");
     const url = constants.POSTRUNDEVURL;
-
+    
     async function handleSubmit(e) {
         e.preventDefault();  
         let isAuth = false;       
         isAuth = await fetchAuth(url, value);            
-        if(isAuth){
-            setValue("");            
+        if(isAuth){            
+            setValue(""); 
+            return props.setShowForm(true);        
         }
+
+        setValue("");
+        
     }
     
     return (
