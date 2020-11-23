@@ -4,8 +4,7 @@ async function fetchAuth(url, password) {
         headers: { 'Content-Type': 'application/json'},
         body: JSON.stringify({ Password: password})
     };
-    const result = await fetch(url, requestOptions);
-    console.log(`fetch result: ${result}`);
+    const result = await fetch(url, requestOptions);    
     if(result.status === 200){
         return true;
     } else if (result.status >= 400){

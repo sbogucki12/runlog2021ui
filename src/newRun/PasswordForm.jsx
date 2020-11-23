@@ -4,19 +4,25 @@ import constants from '../utilities/constants';
 
 function PasswordForm(props) {    
     const [value, setValue] = useState("");
-    const url = constants.POSTRUNDEVURL;
+    const [showPasswordWarning, setShowPasswordWarning] = useState(false)
+    const url = constants.POSTPWDEVURL;
     
+    let validation = <p><i>Enter Password.</i></p>
+
+    if(showPasswordWarning){
+        validation = <p><i>Wrong Password.</i></p>
+    }
+
     async function handleSubmit(e) {
         e.preventDefault();  
         let isAuth = false;       
         isAuth = await fetchAuth(url, value);            
         if(isAuth){            
-            setValue(""); 
+            setValue("");         
             return props.setShowForm(true);        
-        }
-
-        setValue("");
-        
+        }      
+        setShowPasswordWarning(true);
+        setValue("");        
     }
     
     return (
@@ -24,6 +30,7 @@ function PasswordForm(props) {
             <label>
                 Password:
                 <input type="password" name="password" value={value} onChange={(e) => setValue(e.target.value)}/>
+                {validation}
             </label>
             <input type="submit" value="Submit" />
         </form>
