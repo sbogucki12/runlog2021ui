@@ -15,8 +15,8 @@ function NewRunForm(){
     
     async function handleSubmit(e) {
         e.preventDefault();
-        const url = constants.POSTRUNDEVURL; 
-        
+        const url = constants.POSTRUNDEVURL;        
+
         const body = {
             Date: value.runDate.toString(),
             Duration: value.runDuration.toString(),
@@ -32,7 +32,7 @@ function NewRunForm(){
     const list = fields.map((field) => 
     <Fragment key={field.name}>
          {field.title}
-                <input type={field.type} name={field.name} value={value[field.name]} onChange={(e) => {
+                <input type={field.type} name={field.name} value={value[field.name]} step={0.01} onChange={(e) => {
                     setValue({
                         ...value,
                         [field.name]: e.target.value
