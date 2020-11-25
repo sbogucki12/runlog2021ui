@@ -1,15 +1,7 @@
-import fetchGetRuns from '../utilities/fetchGetRuns';
-import constants from '../utilities/constants';
-import { useState, useEffect } from 'react';
+import GetRunsHook from './GetRunsHook';
 
 function RunLogHome() {
-    const [data, setData] = useState({runs: []});
-
-    const url = constants.GETRUNSDEVURL;    
-    
-    useEffect(() => {
-        fetchGetRuns(url).then(runs => setData({runs: runs}))
-    }, [])
+    const data = GetRunsHook();
     
     const view = data.runs.map((run) => 
         <li key={run.runId}>
