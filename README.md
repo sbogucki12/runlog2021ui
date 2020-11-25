@@ -2,8 +2,8 @@
 
 11/24
 
-<p><img src="https://github.com/sbogucki12/runlog2021ui/getRunsHook.jpg" /></p>
-<p><img src=<img src="https://github.com/sbogucki12/runlog2021ui/runLogHome.jpg" /></p>
+<p><img src=<img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/getRunsHook.jpg" /></p>
+<p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/runLogHome.jpg" /></p>
 
 
 11/21
