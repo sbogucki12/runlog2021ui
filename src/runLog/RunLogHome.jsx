@@ -1,37 +1,61 @@
-import GetRunsHook from './GetRunsHook';
+import useGetRuns from './useGetRuns';
+import './runLog.css';
+import { Fragment } from 'react';
 
 function RunLogHome() {
-    let loadingScreen = <p><b><i>Loading...</i></b></p>
+    let loadingScreen = (
+		<p>
+			<b>
+				<i>Loading...</i>
+			</b>
+		</p>
+	);
 
-    const data = GetRunsHook();  
+	const data = useGetRuns();
+    
+	if (data.runs.length > 0) {
+		loadingScreen = null;
+	}
 
-    if(data.runs.length > 0){
-        loadingScreen = null;
-    }
+	if (data === undefined) {
+		loadingScreen = (
+			<p>
+				<b>
+					<i>No Runs Available...</i>
+				</b>
+			</p>
+		);
+	}
 
-    if(data.runs === undefined){
-        loadingScreen = <p><b><i>No Runs Available...</i></b></p>
-    }
-
-    const view = data.runs.map((run) => 
-        <li key={run.runId}>
-            <p><b>Date: {run.date}</b></p>
-            <p><b>Distance: {run.length} </b></p>
-            <p><b>Time: {run.duration} </b></p>
-            <p><b>Pace: {run.pace} </b></p>
-            <p><b>Environment: {run.type} </b></p>
-            <p><b>Surface: {run.surface} </b></p>
-        </li>
-    )
+    const view = data.runs.map((run) => (
+		<Fragment key={run.runId}>
+            <div/>
+			<div>{run.date.substr(0, 10)}</div>
+			<div>{run.length}</div>
+			<div className="timeCellSpacing">{run.duration.substr(0, 8)}</div>            
+			<div>{run.pace.substr(0, 8)}</div>
+			<div>{run.type}</div>
+			<div>{run.surface}</div>
+            <div/>
+		</Fragment>
+	));
 
     return (
-        <div>
-            {loadingScreen}
-            <ul>
-                {view}
-            </ul>
-        </div>
-    )
+		<div>
+			<div id="runLogContainer">
+                <div/>
+				<div>Date</div>
+				<div>Distance</div>
+				<div className="timeCellSpacing">Time</div>                
+				<div>Pace</div>
+				<div>Environment</div>
+				<div>Surface</div>
+                <div/>
+				{view}
+			</div>
+			<div>{loadingScreen}</div>
+		</div>
+	);
 }; 
 
 export default RunLogHome; 

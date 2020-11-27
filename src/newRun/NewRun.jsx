@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import PasswordForm from './PasswordForm';
 import { useState } from 'react';
 import NewRunForm from './NewRunForm';
+import DeleteRun from './DeleteRun';
 
 function NewRun () {
     const [showForm, setShowForm] = useState(false);
@@ -13,12 +14,17 @@ function NewRun () {
     if(showForm){
         view =
         <div>
+        <div>
             <NewRunForm />
+        </div>
+        <div>
+            <DeleteRun />
+        </div>
         </div>
     }
     return (
         <div>
-            <h1>New Run</h1>
+            <h1>Admin</h1>
             <div>                
                 {view}
             </div>

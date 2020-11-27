@@ -1,7 +1,6 @@
-const constants = {
-    GETRUNSDEVURL: 'http://localhost:51563/api/run/',
+const constants = {    
     POSTPWDEVURL: 'http://localhost:51563/api/authentication',
-    POSTRUNDEVURL: 'http://localhost:51563/api/run'
+    RUNSAPIDEV: 'http://localhost:51563/api/run/'   
 };
 
 export default constants; 

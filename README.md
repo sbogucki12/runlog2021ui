@@ -1,5 +1,10 @@
 ## Last commit
 
+
+11/27
+
+<p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/deleteRungif.gif" /></p>
+
 11/24
 
 <p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/getRunsHook.jpg" /></p>
@@ -10,6 +15,13 @@
 
 ![](http://g.recordit.co/Bz0JF3Qs4R.gif)
 
+
+
+## To Do 
+
+[ ] - Pagination
+
+[ ] - Add styling 
 
 
 # Getting Started with Create React App

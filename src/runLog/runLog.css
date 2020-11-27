@@ -1,0 +1,10 @@
+#runLogContainer {
+    display: grid; 
+    grid-template-rows: auto auto;
+    grid-template-columns: 1% auto auto auto auto auto auto 1%;
+}
+
+.timeCellSpacing {
+    padding-right: 5px; 
+}
+
