@@ -23,12 +23,12 @@ const fields = [
         title: "Surface Type", 
         type: "text",        
         name: "runSurface"
-    },
-    {
+    }
+    /*{
         title: "Image",
         type: "file",
         name: "runImage"
-    }
+    }*/
 ]
 
 export default fields; 

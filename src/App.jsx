@@ -11,7 +11,7 @@ function App() {
           <Route path="/home">
             <Home />
           </Route>
-          <Route path="/newrun">
+          <Route path="/admin">
             <NewRun />
           </Route>         
           <Route path="/">

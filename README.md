@@ -3,6 +3,8 @@
 
 11/27
 
+<p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/reportsGif1.gif"/></p>
+
 <p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/deleteRungif.gif" /></p>
 
 11/24

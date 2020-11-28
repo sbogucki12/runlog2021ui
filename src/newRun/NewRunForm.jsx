@@ -9,8 +9,8 @@ function NewRunForm(){
         runDuration: undefined,
         runDistance: undefined,
         runEnvironment: "",
-        runSurface: "",
-        runImage: ""
+        runSurface: ""
+        //runImage: ""
     });    
     
     async function handleSubmit(e) {
@@ -21,7 +21,7 @@ function NewRunForm(){
             Date: value.runDate.toString(),
             Duration: value.runDuration.toString(),
             Length: Number(value.runDistance),
-            ImageUrl: null,
+            //ImageUrl: null,
             Type: value.runEnvironment.toString(),
             Surface: value.runSurface.toString()
         } 

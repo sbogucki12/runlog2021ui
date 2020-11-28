@@ -1,8 +1,14 @@
 import useGetRuns from './useGetRuns';
 import './runLog.css';
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
+import RunLogHeader from './RunLogHeader';
+import RunLogModal from './RunLogModal';
+import RunLogModalContent from './RunLogModalContent';
 
 function RunLogHome() {
+	const [showModal, setShowModal] = useState(false);
+
+
     let loadingScreen = (
 		<p>
 			<b>
@@ -40,8 +46,12 @@ function RunLogHome() {
 		</Fragment>
 	));
 
+	console.log(document.getElementById("myModal"));
+
     return (
 		<div>
+			<RunLogHeader setShowModal={setShowModal} />
+			{showModal && <RunLogModal setShowModal={setShowModal}><RunLogModalContent setShowModal={setShowModal} /></RunLogModal>}
 			<div id="runLogContainer">
                 <div/>
 				<div>Date</div>
