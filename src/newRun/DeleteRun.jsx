@@ -6,8 +6,12 @@ function DeleteRun() {
 	let runToDelete;
 
 	function onDelete(e) {
-        e.preventDefault();
-        const url = constants.RUNSAPIDEV;
+		e.preventDefault();
+		
+		let url; 
+		if(window.location.hostname.includes("localhost")){
+			url = constants.RUNSAPIDEV;  
+		}        
 
 		fetch(`${url}${runToDelete}`, {
 			method: 'DELETE',
@@ -22,7 +26,6 @@ function DeleteRun() {
 
 	if (runs.length > 0) {
 		runToDelete = runs.sort((a, b) => new Date(a.date) - new Date(b.date))[runs.length - 1].runId;
-		console.log(runToDelete);
 	}
 
 	return (

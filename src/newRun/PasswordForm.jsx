@@ -5,7 +5,11 @@ import constants from '../utilities/constants';
 function PasswordForm(props) {    
     const [value, setValue] = useState("");
     const [showPasswordWarning, setShowPasswordWarning] = useState(false)
-    const url = constants.POSTPWDEVURL;
+
+    let url; 
+    if(window.location.hostname.includes("localhost")){
+        url = constants.POSTPWDEVURL;  
+    }    
     
     let validation = <p><i>Enter Password.</i></p>
 

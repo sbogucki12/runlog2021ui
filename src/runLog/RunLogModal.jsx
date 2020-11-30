@@ -2,8 +2,7 @@ import './runLog.css';
 
 function RunLogModal(props) {
 	return (
-        <div>{props.children}</div>
-		
+        <div>{props.children}</div>		
 	);
 }
 

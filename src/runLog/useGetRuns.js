@@ -5,11 +5,13 @@ import constants from '../utilities/constants';
 function useGetRuns () {
     const [data, setData] = useState({runs: []});
 
-    const url = constants.RUNSAPIDEV;  
+    let url; 
+    if(window.location.hostname.includes("localhost")){
+        url = constants.RUNSAPIDEV;  
+    }
 
     useEffect(() => {
-        fetchGetRuns(url).then(r => {
-            console.log(`r: ${JSON.stringify(r[0])}`)            
+        fetchGetRuns(url).then(r => {                      
             r.sort((a,b) => {
                 return new Date(b.date) - new Date(a.date);
             })

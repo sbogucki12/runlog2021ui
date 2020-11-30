@@ -23,6 +23,31 @@ const fields = [
         title: "Surface Type", 
         type: "text",        
         name: "runSurface"
+    }, 
+    {
+        title: "Hours of Sleep", 
+        type: "number",        
+        name: "runSleepHours"
+    }, 
+    {
+        title: "Sleep - Time to Bed", 
+        type: "number",        
+        name: "runSleepToBedTime"
+    }, 
+    {
+        title: "Sleep - Time Awake", 
+        type: "number",        
+        name: "runSleepWakeTime"
+    }, 
+    {
+        title: "Background Playlist", 
+        type: "text",        
+        name: "runListenedTo"
+    }, 
+    {
+        title: "Outside Temperature", 
+        type: "number",        
+        name: "runTemperature"
     }
     /*{
         title: "Image",

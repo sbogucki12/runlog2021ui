@@ -9,21 +9,35 @@ function NewRunForm(){
         runDuration: undefined,
         runDistance: undefined,
         runEnvironment: "",
-        runSurface: ""
+        runSurface: "",
+        runSleepHours: undefined,
+        runSleepToBedTime: undefined,
+        runSleepWakeTime: undefined,
+        runListenedTo: "",
+        runTemperature: undefined
         //runImage: ""
     });    
     
     async function handleSubmit(e) {
         e.preventDefault();
-        const url = constants.RUNSAPIDEV;        
 
+        let url; 
+		if(window.location.hostname.includes("localhost")){
+			url = constants.RUNSAPIDEV;  
+		}     
+        
         const body = {
             Date: value.runDate.toString(),
             Duration: value.runDuration.toString(),
-            Length: Number(value.runDistance),
-            //ImageUrl: null,
+            Length: Number(value.runDistance),            
             Type: value.runEnvironment.toString(),
-            Surface: value.runSurface.toString()
+            Surface: value.runSurface.toString(),
+            SleepHours: Number(value.runSleepHours),
+            SleepToBedTime: Number(value.runSleepToBedTime),
+            SleepWakeTime: Number(value.runSleepWakeTime),
+            RunListenedTo: value.runListenedTo.toString(),
+            Temperature: Number(value.runTemperature)
+            //ImageUrl: null
         } 
         const result = await fetchPostRun(url, body);
         console.log(result);

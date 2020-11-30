@@ -1,5 +1,17 @@
 ## Last commit
 
+11/29: 
+
+<ul>
+    <li>
+        Added more data to run entity (temperature, sleep data)
+    </li>
+    <li>
+        Added "More Info" button to run log table. <b>But has bug</b>
+    </li>
+</ul>
+
+
 
 11/27
 
@@ -21,9 +33,7 @@
 
 ## To Do 
 
-[ ] - Pagination
-
-[ ] - Add styling 
+[ ] - Fix Bug in "More Info" button, Run Log Table
 
 
 # Getting Started with Create React App
