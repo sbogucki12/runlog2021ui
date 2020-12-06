@@ -6,7 +6,6 @@ import RunLogHome from './runLog/RunLogHome';
 import RunMoreInfo from './runLog/RunMoreInfo';
 import useGetRuns from './runLog/useGetRuns.js';
 
-
 function App() {
   const data = useGetRuns(); 
 

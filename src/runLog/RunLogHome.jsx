@@ -10,11 +10,19 @@ function RunLogHome(props) {
 	const [showModal, setShowModal] = useState(false);
 
 	let loadingScreen = (
-		<p>
-			<b>
-				<i>Loading...</i>
-			</b>
-		</p>
+		<tbody>
+			<tr>
+				<td />
+				<td>
+				<b>
+					<i>Loading...</i>
+				</b>
+				</td>
+				<td />
+				<td />
+				<td />
+			</tr>
+		</tbody>
 	);
 
 	const data = useGetRuns(props.data);
@@ -34,37 +42,37 @@ function RunLogHome(props) {
 	}
 
 	const view = data.runs.map((run) => (
-		<tr key={run.runId}>
+		<tr key={run.runId} id="runLogRow">			
 			<td>{run.date.substr(0, 10)}</td>
 			<td>{run.length}</td>
 			<td>{run.duration.substr(0, 8)}</td>
 			<td>{run.pace.substr(0, 8)}</td>
+			<td>
+				<Link to={`/${run.runId}`}>
+					<button>More Info</button>
+				</Link>
+			</td>	
 			{/*<td>{run.type}</td>
 			<td>{run.surface}</td>
 			<td>{run.sleepHours}</td>
 			<td>{run.sleepToBedTime}</td>
 			<td>{run.sleepWakeTime}</td>
 			<td>{run.runListenedTo}</td>
-			<td>{run.temperature}</td>*/}
-			<td>
-				<Link to={`/${run.runId}`}>
-					<button>More Info</button>
-				</Link>
-			</td>
+			<td>{run.temperature}</td>*/}		
 		</tr>
 	));
 
 	return (
-		<div>
-			<RunLogHeader setShowModal={setShowModal} />
+		<div style={{ display: 'flex'}}>
+			<RunLogHeader setShowModal={setShowModal} />			
 			{showModal && (
 				<RunLogModal setShowModal={setShowModal}>
 					<RunLogModalContent setShowModal={setShowModal} />
 				</RunLogModal>
-			)}			
-			<table style={{ width: '100%' }}>
+			)}					
+			<table id="runLogTable">				
 				<thead>
-					<tr>
+					<tr>						
 						<th>Date</th>
 						<th>Distance</th>
 						<th>Time</th>
@@ -75,14 +83,14 @@ function RunLogHome(props) {
 						<th>Sleep - Time to Bed</th>
 						<th>Sleep - Time Awake</th>
 						<th>Music/Podcast</th>
-						<th>Outdoor Temperature</th>*/}
-						<th />
+						<th>Outdoor Temperature</th>*/}	
+						<th />					
 					</tr>
 				</thead>
 				<tbody>{view}</tbody>
-			</table>
-			<div>{loadingScreen}</div>
-		</div>
+				{loadingScreen}	
+			</table>			
+			</div>		
 	);
 }; 
 

@@ -1,16 +1,3 @@
-/*General Run Log Begin*/
-#runLogContainer {
-    display: grid; 
-    grid-template-rows: auto auto;
-    grid-template-columns: 1% auto auto auto auto auto 1%;
-}
-
-.timeCellSpacing {
-    padding-right: 5px; 
-}
-
-/*General Run Log End*/
-
 /*RunLog Header Begin*/
 #runLogHeaderContainer {
     display: flex; 
@@ -18,6 +5,10 @@
     align-items: center;
     padding-right: 5%; 
     background-color: black;   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;    
 }
 
 .runLogHeaderBtn {
@@ -74,3 +65,30 @@
 
 
 /*RunLog Sorting Modal End*/
+
+/* MoreInfo table Begin*/
+
+#runLogTable {
+  width: 100%; 
+  position: relative;  
+  margin-top: 31px; 
+}
+
+#runLogRow {
+  color: var(--third-blue-color);  
+  font-weight: bold; 
+}
+
+#runLogRow:nth-child(even) {
+  background: var(--secodary-white-color);
+}
+
+#runLogRow:nth-child(odd) {
+  background: var(--primary-slate-color);
+}
+
+#runLogRow:hover {
+  background: var(--third-blue-color);
+}
+
+/*MoreInfo table End*/

@@ -1,4 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
+import RunLogHeader from './RunLogHeader';
+import './runLog.css';
 
 function RunMoreInfo (props) {
     let { id } = useParams();
@@ -8,7 +10,10 @@ function RunMoreInfo (props) {
     
     return (
         <div>
-            <h1>Date: {run.date.substr(0, 10)}</h1>            
+            <RunLogHeader />
+            <h1>Date: {run.date.substr(0, 10)}</h1>
+            <p>Distance: {run.length}</p>
+			<p>Time: {run.duration.substr(0, 8)}</p>			    
             <p>Pace: {run.pace.substr(0, 8)}</p>
 			<p>Environment: {run.type}</p>
 			<p>Running Surface: {run.surface}</p>
