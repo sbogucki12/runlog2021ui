@@ -1,13 +1,17 @@
 ## Last commit
 
-11/29: 
+
+
+12/5
+
+<p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/moreInfo1gif.gif" /></p>
+
+
+11/29 
 
 <ul>
     <li>
         Added more data to run entity (temperature, sleep data)
-    </li>
-    <li>
-        Added "More Info" button to run log table. <b>But has bug</b>
     </li>
 </ul>
 
@@ -33,7 +37,7 @@
 
 ## To Do 
 
-[ ] - Fix Bug in "More Info" button, Run Log Table
+[ x ] - Fix Bug in "More Info" button, Run Log Table
 
 
 # Getting Started with Create React App
