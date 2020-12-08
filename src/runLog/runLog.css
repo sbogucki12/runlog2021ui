@@ -68,27 +68,51 @@
 
 /* MoreInfo table Begin*/
 
-#runLogTable {
-  width: 100%; 
-  position: relative;  
-  margin-top: 31px; 
+
+#runLogTableHeader {  
+  padding-top: 40px;  
+  display: grid;
+  grid-template-columns: auto 20% 20% 20% 20% 20% auto;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  background-color: var(--primary-slate-color);
+}
+#runLogBodyContainer {
+  padding-top: 75px;
 }
 
-#runLogRow {
+#runLogBody {  
+  display: grid;
+  grid-template-columns: auto 20% 20% 20% 20% 20% auto;
+}
+
+#runLogBody:nth-child(odd) {
+  background: var(--primary-blue-color);
+}
+
+#runLogBody:nth-child(even) {
+  background: var(--secondary-blue-color);
+}
+
+#runLogBody:hover {
+  background: var(--third-blue-color);
+} 
+
+/* #runLogRow {
   color: var(--third-blue-color);  
   font-weight: bold; 
-}
+} */
 
-#runLogRow:nth-child(even) {
-  background: var(--secodary-white-color);
-}
+/*#runLogRowContainer {
+  display: grid; 
+  grid-template-columns: 1% auto auto auto auto auto 1%;
+  width: 100%;
+}*/
 
-#runLogRow:nth-child(odd) {
-  background: var(--primary-slate-color);
-}
 
-#runLogRow:hover {
-  background: var(--third-blue-color);
-}
+
+
+
 
 /*MoreInfo table End*/

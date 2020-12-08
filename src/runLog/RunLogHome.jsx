@@ -1,10 +1,11 @@
 import useGetRuns from './useGetRuns';
 import './runLog.css';
-import { useState} from 'react';
+import { useState } from 'react';
 import RunLogHeader from './RunLogHeader';
 import RunLogModal from './RunLogModal';
 import RunLogModalContent from './RunLogModalContent';
 import { Link } from 'react-router-dom';
+import RunLogTableHeader from './RunLogTableHeader';
 
 function RunLogHome(props) {
 	const [showModal, setShowModal] = useState(false);
@@ -42,55 +43,49 @@ function RunLogHome(props) {
 	}
 
 	const view = data.runs.map((run) => (
-		<tr key={run.runId} id="runLogRow">			
-			<td>{run.date.substr(0, 10)}</td>
-			<td>{run.length}</td>
-			<td>{run.duration.substr(0, 8)}</td>
-			<td>{run.pace.substr(0, 8)}</td>
-			<td>
+		<div key={run.runId} id="runLogBody">
+			<div />			
+			<div>{run.date.substr(0, 10)}</div>
+			<div>{run.length}</div>
+			<div>{run.duration.substr(0, 8)}</div>
+			<div>{run.pace.substr(0, 8)}</div>
+			<div>
 				<Link to={`/${run.runId}`}>
 					<button>More Info</button>
 				</Link>
-			</td>	
-			{/*<td>{run.type}</td>
-			<td>{run.surface}</td>
-			<td>{run.sleepHours}</td>
-			<td>{run.sleepToBedTime}</td>
-			<td>{run.sleepWakeTime}</td>
-			<td>{run.runListenedTo}</td>
-			<td>{run.temperature}</td>*/}		
-		</tr>
+			</div>	
+			<div />
+			{/*<div>{run.type}</div>
+			<div>{run.surface}</div>
+			<div>{run.sleepHours}</div>
+			<div>{run.sleepToBedTime}</div>
+			<div>{run.sleepWakeTime}</div>
+			<div>{run.runListenedTo}</div>
+			<div>{run.temperature}</div>*/}		
+		</div>
 	));
 
 	return (
-		<div style={{ display: 'flex'}}>
-			<RunLogHeader setShowModal={setShowModal} />			
+		<div>
+			<RunLogHeader setShowModal={setShowModal} />
 			{showModal && (
 				<RunLogModal setShowModal={setShowModal}>
 					<RunLogModalContent setShowModal={setShowModal} />
 				</RunLogModal>
-			)}					
-			<table id="runLogTable">				
-				<thead>
-					<tr>						
-						<th>Date</th>
-						<th>Distance</th>
-						<th>Time</th>
-						<th>Pace</th>
-						{/*<th>Environment</th>
-						<th>Surface</th>
-						<th>Hours of Sleep</th>
-						<th>Sleep - Time to Bed</th>
-						<th>Sleep - Time Awake</th>
-						<th>Music/Podcast</th>
-						<th>Outdoor Temperature</th>*/}	
-						<th />					
-					</tr>
-				</thead>
-				<tbody>{view}</tbody>
-				{loadingScreen}	
-			</table>			
-			</div>		
+			)}
+
+				<RunLogTableHeader />
+				{/*<div>Environment</div>
+					<div>Surface</div>
+					<div>Hours of Sleep</div>
+					<div>Sleep - Time to Bed</div>
+					<div>Sleep - Time Awake</div>
+					<div>Music/Podcast</div>
+					<div>Outdoor Temperature</div>*/}
+				<div />
+			<div id="runLogBodyContainer">{view}</div>
+			{loadingScreen}
+		</div>
 	);
 }; 
 
