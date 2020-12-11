@@ -15,9 +15,9 @@ function RunLogHome(props) {
 			<tr>
 				<td />
 				<td>
-				<b>
-					<i>Loading...</i>
-				</b>
+					<b>
+						<i>Loading...</i>
+					</b>
 				</td>
 				<td />
 				<td />
@@ -44,7 +44,7 @@ function RunLogHome(props) {
 
 	const view = data.runs.map((run) => (
 		<div key={run.runId} id="runLogBody">
-			<div />			
+			<div />
 			<div>{run.date.substr(0, 10)}</div>
 			<div>{run.length}</div>
 			<div>{run.duration.substr(0, 8)}</div>
@@ -53,7 +53,7 @@ function RunLogHome(props) {
 				<Link to={`/${run.runId}`}>
 					<button>More Info</button>
 				</Link>
-			</div>	
+			</div>
 			<div />
 			{/*<div>{run.type}</div>
 			<div>{run.surface}</div>
@@ -61,7 +61,7 @@ function RunLogHome(props) {
 			<div>{run.sleepToBedTime}</div>
 			<div>{run.sleepWakeTime}</div>
 			<div>{run.runListenedTo}</div>
-			<div>{run.temperature}</div>*/}		
+			<div>{run.temperature}</div>*/}
 		</div>
 	));
 
@@ -74,19 +74,19 @@ function RunLogHome(props) {
 				</RunLogModal>
 			)}
 
-				<RunLogTableHeader />
-				{/*<div>Environment</div>
+			<RunLogTableHeader />
+			{/*<div>Environment</div>
 					<div>Surface</div>
 					<div>Hours of Sleep</div>
 					<div>Sleep - Time to Bed</div>
 					<div>Sleep - Time Awake</div>
 					<div>Music/Podcast</div>
 					<div>Outdoor Temperature</div>*/}
-				<div />
+			<div />
 			<div id="runLogBodyContainer">{view}</div>
 			{loadingScreen}
 		</div>
 	);
-}; 
+}
 
-export default RunLogHome; 
+export default RunLogHome;

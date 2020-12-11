@@ -6,7 +6,7 @@ function RunMoreInfo (props) {
     let { id } = useParams();
     const data = props.data;
     const runs = data.runs;    
-    const run = runs.find(run => run.runId == id)
+    const run = runs.find(run => run.runId == id);
     
     return (
         <div>

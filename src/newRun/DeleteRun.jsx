@@ -8,7 +8,7 @@ function DeleteRun() {
 	function onDelete(e) {
 		e.preventDefault();
 		
-		let url; 
+		let url = constants.RUNSAPIPROD; 
 		if(window.location.hostname.includes("localhost")){
 			url = constants.RUNSAPIDEV;  
 		}        

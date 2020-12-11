@@ -5,26 +5,38 @@ import Home from './home/Home';
 import RunLogHome from './runLog/RunLogHome';
 import RunMoreInfo from './runLog/RunMoreInfo';
 import useGetRuns from './runLog/useGetRuns.js';
+import { useEffect, useState } from 'react';
 
 function App() {
-  const data = useGetRuns(); 
+	const [data, setData] = useState([]);
+	const [loading, setLoading] = useState(true);
 
-  return (
-    <div className="App">
-      <Switch>
-          <Route exact path="/home">
-            <Home />
-          </Route>
-          <Route exact path="/admin">
-            <NewRun />
-          </Route>         
-          <Route exact path="/">
-            <RunLogHome data={data}/>
-          </Route>
-          <Route path="/:id" children={<RunMoreInfo data={data}/>} />
-        </Switch>
-    </div>
-  );
+	const runs = useGetRuns();
+	useEffect(() => {
+		setData(runs);
+		setLoading(false);
+	}, [runs]);
+
+	let view = <h1>Loading...</h1>;
+
+	if (!loading) {
+		view = (
+			<Switch>
+				<Route exact path="/home">
+					<Home />
+				</Route>
+				<Route exact path="/admin">
+					<NewRun />
+				</Route>
+				<Route exact path="/">
+					<RunLogHome data={runs} />
+				</Route>
+				<Route path="/:id" children={<RunMoreInfo data={data} />} />
+			</Switch>
+		);
+	}
+
+	return <div className="App">{view}</div>;
 }
 
 export default App;

@@ -6,7 +6,7 @@ function PasswordForm(props) {
     const [value, setValue] = useState("");
     const [showPasswordWarning, setShowPasswordWarning] = useState(false)
 
-    let url; 
+    let url = constants.POSTPWDPRODURL; 
     if(window.location.hostname.includes("localhost")){
         url = constants.POSTPWDEVURL;  
     }    
