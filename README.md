@@ -1,5 +1,6 @@
 ## Last commit
 
+[Demo App Now Online!](https://kind-forest-04b815c1e.azurestaticapps.net/)
 
 12/11
 
