@@ -2,52 +2,63 @@ const fields = [
     {
         title: "Run Date",
         type: "date",
-        name: "runDate"
+        name: "runDate",
+        width: "40vw"
     },
     {
         title: "Duration", 
         type: "text",        
-        name: "runDuration"
+        name: "runDuration",
+        width: "15vw"
+        
     }, 
     {
         title: "Distance", 
         type: "number",        
-        name: "runDistance"
+        name: "runDistance",
+        width: "15vw"
     }, 
     {
         title: "Environment", 
         type: "text",        
-        name: "runEnvironment"
+        name: "runEnvironment",
+        width: "40vw"
     }, 
     {
         title: "Surface Type", 
         type: "text",        
-        name: "runSurface"
+        name: "runSurface",
+        width: "40vw"
     }, 
     {
         title: "Hours of Sleep", 
         type: "number",        
-        name: "runSleepHours"
+        name: "runSleepHours",
+        width: "15vw"        
     }, 
     {
         title: "Sleep - Time to Bed", 
         type: "number",        
-        name: "runSleepToBedTime"
+        name: "runSleepToBedTime",
+        width: "15vw"
     }, 
     {
         title: "Sleep - Time Awake", 
         type: "number",        
-        name: "runSleepWakeTime"
+        name: "runSleepWakeTime",
+        width: "15vw"
     }, 
     {
         title: "Background Playlist", 
         type: "text",        
-        name: "runListenedTo"
+        name: "runListenedTo",
+        width: "40vw"
     }, 
     {
         title: "Outside Temperature", 
         type: "number",        
-        name: "runTemperature"
+        name: "runTemperature",
+        width: "5vw"
     }
     /*{
         title: "Image",

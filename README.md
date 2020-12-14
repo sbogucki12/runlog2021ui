@@ -2,6 +2,13 @@
 
 [Demo App Now Online!](https://kind-forest-04b815c1e.azurestaticapps.net/)
 
+
+12/13
+
+<p> Threw some padding and widths on the New Run form </p>
+
+<p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/styling1.gif" /></p>
+
 12/11
 
 <p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/azuregithub.jpg" /></p>

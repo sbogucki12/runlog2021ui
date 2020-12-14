@@ -7,7 +7,7 @@ import DeleteRun from './DeleteRun';
 function NewRun () {
     const [showForm, setShowForm] = useState(false);
     let view = 
-    <div>
+    <div >
         <PasswordForm setShowForm={setShowForm}/>
     </div>;
 
@@ -23,7 +23,7 @@ function NewRun () {
         </div>
     }
     return (
-        <div>
+        <div id="newRunContainer">
             <h1>Admin</h1>
             <div>                
                 {view}

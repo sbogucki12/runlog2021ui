@@ -7,11 +7,11 @@ function DeleteRun() {
 
 	function onDelete(e) {
 		e.preventDefault();
-		
-		let url = constants.RUNSAPIPROD; 
-		if(window.location.hostname.includes("localhost")){
-			url = constants.RUNSAPIDEV;  
-		}        
+
+		let url = constants.RUNSAPIPROD;
+		if (window.location.hostname.includes('localhost')) {
+			url = constants.RUNSAPIDEV;
+		}
 
 		fetch(`${url}${runToDelete}`, {
 			method: 'DELETE',
@@ -31,8 +31,12 @@ function DeleteRun() {
 	return (
 		<div>
 			{' '}
-			<h1>Delete Last Run</h1>
-			<button onClick={(e) => onDelete(e)}>Delete Last</button>
+			<div>
+				<h2>Delete Last Run</h2>
+			</div>
+			<div style={{ marginBottom: '2vh' }}>
+				<button onClick={(e) => onDelete(e)}>Delete Last</button>
+			</div>
 		</div>
 	);
 }
