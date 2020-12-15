@@ -3,18 +3,17 @@
 #runLogHeaderContainer {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  padding-right: 5%;
+  align-items: center;  
   background-color: black;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 100;  
 }
 
 .runLogHeaderBtn {
   margin: 5px;
-  flex-grow: (1);
+  margin-right: 4vw;  
 }
 
 /*RunLog Header End*/
@@ -83,11 +82,12 @@
 #runLogTableHeader {
   padding-top: 40px;
   display: grid;
-  grid-template-columns: auto 20% 20% 20% 20% 20% auto;
+  grid-template-columns: 2.5% 18% 14% 18% 18% 16% 2.5%;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   background-color: var(--primary-slate-color);
+  font-size: small;  
 }
 
 #runLogBodyContainer {
@@ -96,7 +96,11 @@
 
 #runLogBody {
   display: grid;
-  grid-template-columns: auto 20% 20% 20% 20% 20% auto;
+  grid-template-columns: 2.5% 18% 14% 18% 18% 16% 2.5%;
+  font-size: small;
+  width: 100vw;
+  align-items: center;
+  margin-bottom: 1px;
 }
 
 #runLogBody:nth-child(odd) {

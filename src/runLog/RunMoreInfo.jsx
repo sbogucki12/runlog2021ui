@@ -5,12 +5,12 @@ import './runLog.css';
 function RunMoreInfo (props) {
     let { id } = useParams();
     const data = props.data;
-    const runs = data.runs;    
+    const runs = data.runs;   
     const run = runs.find(run => run.runId == id);
     
     return (
         <div>
-            <RunLogHeader />
+            <RunLogHeader />            
             <h1>Date: {run.date.substr(0, 10)}</h1>
             <p>Distance: {run.length}</p>
 			<p>Time: {run.duration.substr(0, 8)}</p>			    

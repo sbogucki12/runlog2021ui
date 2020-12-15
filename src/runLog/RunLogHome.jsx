@@ -1,4 +1,3 @@
-import useGetRuns from './useGetRuns';
 import './runLog.css';
 import { useState } from 'react';
 import RunLogHeader from './RunLogHeader';
@@ -11,22 +10,20 @@ function RunLogHome(props) {
 	const [showModal, setShowModal] = useState(false);
 
 	let loadingScreen = (
-		<tbody>
-			<tr>
-				<td />
-				<td>
-					<b>
-						<i>Loading...</i>
-					</b>
-				</td>
-				<td />
-				<td />
-				<td />
-			</tr>
-		</tbody>
+		<div>
+			<div />
+			<div>
+				<b>
+					<i>Loading...</i>
+				</b>
+			</div>
+			<div />
+			<div />
+			<div />
+		</div>
 	);
 
-	const data = useGetRuns(props.data);
+	const data = props.data; 
 
 	if (data.runs.length > 0) {
 		loadingScreen = null;
@@ -51,17 +48,10 @@ function RunLogHome(props) {
 			<div>{run.pace.substr(0, 8)}</div>
 			<div>
 				<Link to={`/${run.runId}`}>
-					<button>More Info</button>
+					<button style={{ whiteSpace: 'nowrap', textAlign: 'center'}}>More Info</button>
 				</Link>
 			</div>
-			<div />
-			{/*<div>{run.type}</div>
-			<div>{run.surface}</div>
-			<div>{run.sleepHours}</div>
-			<div>{run.sleepToBedTime}</div>
-			<div>{run.sleepWakeTime}</div>
-			<div>{run.runListenedTo}</div>
-			<div>{run.temperature}</div>*/}
+			<div />			
 		</div>
 	));
 
