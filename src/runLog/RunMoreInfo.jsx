@@ -18,8 +18,9 @@ function RunMoreInfo (props) {
 			<p>Environment: {run.type}</p>
 			<p>Running Surface: {run.surface}</p>
 			<p>Sleep (Hours): {run.sleepHours}</p>
-		    {/*<p>{run.sleepToBedTime}</p>
-			<p>{run.sleepWakeTime}</p>*/}
+		    <p>Sleep (Start Time): {run.sleepToBedTime.substr(11, 5)}</p>
+			<p>Sleep (Wake Up Time): {run.sleepWakeTime.substr(11, 5)}</p>
+            <p>Shoe Age (Days): {run.shoeAge}</p>
 			<p>Background Sounds: {run.runListenedTo}</p>
 			<p>Climate (Temp. (F)): {run.temperature}</p>
             <div>
