@@ -12,22 +12,71 @@ function RunMoreInfo(props) {
 		<div>
 			<RunLogHeader />
 			<div id="runLogMoreInfoContentContainer">
-				<h1>Date: {run.date.substr(0, 10)}</h1>
-				<p>Distance: {run.length}</p>
-				<p>Time: {run.duration.substr(0, 8)}</p>
-				<p>Pace: {run.pace.substr(0, 8)}</p>
-				<p>Environment: {run.type}</p>
-				<p>Running Surface: {run.surface}</p>
-				<p>Sleep (Hours): {run.sleepHours}</p>
-				<p>Sleep (Start Time): {run.sleepToBedTime.substr(11, 5)}</p>
-				<p>Sleep (Wake Up Time): {run.sleepWakeTime.substr(11, 5)}</p>
-				<p>Shoe Age (Days): {run.shoeAge}</p>
-				<p>Background Sounds: {run.runListenedTo}</p>
-				<p>Climate (Temp. (F)): {run.temperature}</p>
-				<div>
-					<Link to="/runlog">
-						<button>{`<--`}</button>
-					</Link>
+				<div id="runlogMoreInfoBox">
+					<table id="runlogMoreInfoTable">
+						<tbody>
+							<tr>
+								<td className="runlogMoreInfoLabel">
+									<h4>Date: </h4>
+								</td>
+								<td>
+									<h4>{run.date.substr(0, 10)}</h4>
+								</td>
+							</tr>
+							<tr>
+								<td className="runlogMoreInfoLabel">Distance: </td>
+								<td>{run.length}</td>
+							</tr>
+							<tr>
+								<td className="runlogMoreInfoLabel">Time: </td>
+								<td>{run.duration.substr(0, 8)}</td>
+							</tr>
+							<tr>
+								<td className="runlogMoreInfoLabel">Pace: </td>
+								<td>{run.pace.substr(0, 8)}</td>
+							</tr>
+							<tr>
+								<td className="runlogMoreInfoLabel">Environment: </td>
+								<td>{run.type}</td>
+							</tr>
+							<tr>
+								<td className="runlogMoreInfoLabel">Running Surface: </td>
+								<td>{run.surface}</td>
+							</tr>
+							<tr>
+								<td className="runlogMoreInfoLabel">Sleep (Hours): </td>
+								<td>{run.sleepHours}</td>
+							</tr>
+							<tr>
+								<td className="runlogMoreInfoLabel">Sleep (Bed Time): </td>
+								<td>{run.sleepToBedTime.substr(11, 5)}</td>
+							</tr>
+							<tr>
+								<td className="runlogMoreInfoLabel">Sleep (Wake Up): </td>
+								<td>{run.sleepWakeTime.substr(11, 5)}</td>
+							</tr>
+							<tr>
+								<td className="runlogMoreInfoLabel">Shoe Age (days): </td>
+								<td>{run.shoeAge}</td>
+							</tr>
+							<tr>
+								<td className="runlogMoreInfoLabel">Listening To: </td>
+								<td>{run.runListenedTo}</td>
+							</tr>
+							<tr>
+								<td className="runlogMoreInfoLabel">Climate (Temp.): </td>
+								<td>
+									{run.temperature}
+									<span>&#176;</span>F
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div id="runlogMoreInfoButtonContainer">
+						<Link to="/runlog">
+							<button>{`<--`}</button>
+						</Link>
+					</div>
 				</div>
 			</div>
 		</div>

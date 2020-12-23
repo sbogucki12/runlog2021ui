@@ -7,6 +7,8 @@
 
 <p>Added a landing page</p>
 
+<p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/runlogMoreInfo2Gif.gif" /></p>
+
 <p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/runlogCoverGif.gif" /></p>
 
 12/13
