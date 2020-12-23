@@ -164,6 +164,13 @@
   background: var(--third-blue-color);
 }
 
+.expandIcon:hover {
+  border-color: var(--primary-white-color);
+  border-style: solid;
+  border-width: 1px;
+}
+
+
 /*Runlog table End*/
 
 

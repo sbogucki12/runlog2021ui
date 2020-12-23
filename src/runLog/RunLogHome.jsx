@@ -48,7 +48,10 @@ function RunLogHome(props) {
 			<div>{run.pace.substr(0, 8)}</div>
 			<div>
 				<Link to={`/${run.runId}`}>
-					<button style={{ whiteSpace: 'nowrap', textAlign: 'center' }}>More Info</button>
+						<span role="img" aria-label="expand" className="expandIcon">
+							🔍
+						</span>
+					{/*<button style={{ whiteSpace: 'nowrap', textAlign: 'center' }}>More Info</button>*/}
 				</Link>
 			</div>
 			<div />
