@@ -4,6 +4,7 @@ import NewRun from './newRun/NewRun';
 import Home from './home/Home';
 import RunLogHome from './runLog/RunLogHome';
 import RunMoreInfo from './runLog/RunMoreInfo';
+import Landing from './landing/Landing';
 import useGetRuns from './runLog/useGetRuns.js';
 import { useEffect, useState } from 'react';
 
@@ -28,10 +29,11 @@ function App() {
 				<Route exact path="/admin">
 					<NewRun />
 				</Route>
-				<Route exact path="/">
+				<Route exact path="/runlog">
 					<RunLogHome data={runs} />
 				</Route>
 				<Route path="/:id" children={<RunMoreInfo data={data} />} />
+				<Route exact path="/" children={<Landing data={data} />} />
 			</Switch>
 		);
 	}

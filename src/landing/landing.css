@@ -1,0 +1,28 @@
+@import '../App.css';
+
+#landingContainer {
+    background-color: var(--primary-slate-color);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+#landingBox {
+    background-color: var(--third-blue-color);
+    width: 90%; 
+    height: 70%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--primary-blue-color);
+    border-radius: 5%;
+    box-shadow: -5px 5px 5px var(--primary-white-color);
+    flex-direction: column;
+}
+
+#runnerIcon {
+    font-size: 5rem;
+}

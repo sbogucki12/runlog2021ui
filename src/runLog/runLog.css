@@ -2,7 +2,7 @@
 
 #runLogHeaderContainer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;  
   background-color: black;
   position: fixed;
@@ -12,8 +12,15 @@
 }
 
 .runLogHeaderBtn {
-  margin: 5px;
-  margin-right: 4vw;  
+  margin: 1vh;   
+}
+
+#exitIcon {
+  margin-right: 1vw;
+}
+
+#exitIcon:hover {
+  box-shadow: 5px 5px 5px var(--primary-blue-color);
 }
 
 /*RunLog Header End*/
@@ -77,7 +84,20 @@
 /*RunLog Sorting Modal End*/
 
 
-/* MoreInfo table Begin*/
+/*More Info Component Begin*/
+
+#runLogMoreInfoContentContainer {
+  height: 100vh;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*More Info Component End*/
+
+
+/* Runlog table Begin*/
 
 #runLogTableHeader {
   padding-top: 40px;
@@ -115,7 +135,7 @@
   background: var(--third-blue-color);
 }
 
-/*MoreInfo table End*/
+/*Runlog table End*/
 
 
 /* Begin New Run Component */

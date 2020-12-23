@@ -23,7 +23,7 @@ function RunLogHome(props) {
 		</div>
 	);
 
-	const data = props.data; 
+	const data = props.data;
 
 	if (data.runs.length > 0) {
 		loadingScreen = null;
@@ -48,10 +48,10 @@ function RunLogHome(props) {
 			<div>{run.pace.substr(0, 8)}</div>
 			<div>
 				<Link to={`/${run.runId}`}>
-					<button style={{ whiteSpace: 'nowrap', textAlign: 'center'}}>More Info</button>
+					<button style={{ whiteSpace: 'nowrap', textAlign: 'center' }}>More Info</button>
 				</Link>
 			</div>
-			<div />			
+			<div />
 		</div>
 	));
 
