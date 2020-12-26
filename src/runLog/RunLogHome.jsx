@@ -5,9 +5,13 @@ import RunLogModal from './RunLogModal';
 import RunLogModalContent from './RunLogModalContent';
 import { Link } from 'react-router-dom';
 import RunLogTableHeader from './RunLogTableHeader';
+import RunLogFooter from './RunLogFooter';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 
 function RunLogHome(props) {
 	const [showModal, setShowModal] = useState(false);
+	const [showFooter, setShowFooter] = useState(true);
 
 	let loadingScreen = (
 		<div>
@@ -58,8 +62,17 @@ function RunLogHome(props) {
 		</div>
 	));
 
+	let footer = <RunLogFooter setShowFooter={setShowFooter}/>;
+	
+
+	if(!showFooter) {
+		footer = <div id="footerIconContainer" onClick={() => setShowFooter(true)}>
+					<FontAwesomeIcon icon={faPlusSquare} id="footerIcon" />
+				</div>;
+	}
+
 	return (
-		<div>
+		<div id="runlog">
 			<RunLogHeader setShowModal={setShowModal} />
 			{showModal && (
 				<RunLogModal setShowModal={setShowModal}>
@@ -78,6 +91,7 @@ function RunLogHome(props) {
 			<div />
 			<div id="runLogBodyContainer">{view}</div>
 			{loadingScreen}
+			{footer}
 		</div>
 	);
 }

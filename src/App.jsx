@@ -1,7 +1,8 @@
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
-import NewRun from './newRun/NewRun';
 import Home from './home/Home';
+import NewRun from './newRun/NewRun';
+import About from './about/About';
 import RunLogHome from './runLog/RunLogHome';
 import RunMoreInfo from './runLog/RunMoreInfo';
 import Landing from './landing/Landing';
@@ -28,6 +29,9 @@ function App() {
 				</Route>
 				<Route exact path="/admin">
 					<NewRun />
+				</Route>
+				<Route exact path="/about">
+					<About />
 				</Route>
 				<Route exact path="/runlog">
 					<RunLogHome data={runs} />

@@ -1,3 +1,7 @@
+#runlog {
+  background-color: var(--primary-slate-color);  
+}
+
 /*RunLog Header Begin*/
 
 #runLogHeaderContainer {
@@ -9,6 +13,7 @@
   top: 0;
   width: 100%;
   z-index: 100;  
+  border-bottom: 2px solid var(--primary-blue-color);
 }
 
 .runLogHeaderBtn {
@@ -24,6 +29,98 @@
 }
 
 /*RunLog Header End*/
+
+/* Runlog table Begin*/
+
+#runLogTableHeader {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 2.5% 18% 14% 18% 18% 16% 2.5%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--primary-slate-color);
+  font-size: small;  
+  border-bottom: 1px solid var(--primary-white-color); 
+}
+
+#runLogBodyContainer {
+  padding-top: 75px;
+}
+
+#runLogBody {
+  display: grid;
+  grid-template-columns: 2.5% 18% 14% 18% 18% 16% 2.5%;
+  font-size: small;  
+  align-items: center;
+  margin-bottom: 1px;
+}
+
+#runLogBody:nth-child(odd) {
+  background: var(--primary-blue-color);
+}
+
+#runLogBody:nth-child(even) {
+  background: var(--secondary-blue-color);
+}
+
+#runLogBody:hover {
+  background: var(--third-blue-color);
+}
+
+.expandIcon:hover {
+  border-color: var(--primary-white-color);
+  border-style: solid;
+  border-width: 1px;
+}
+
+
+/*Runlog table End*/
+
+
+/* Runlog footer Begin */
+
+#runlogFooter {
+  position: fixed;
+  left: 0;
+  bottom:0;  
+}
+
+#runlogFooterContainer {
+  width: 100vw; 
+  min-height: 3vh;
+  display: grid; 
+  grid-template-columns: 95% 5%;
+  justify-items: center;
+  align-items: center;
+  border-top: 3px solid var(--primary-blue-color);
+  background: var(--primary-white-color);
+}
+
+#footerIconContainer {
+  width: 7vw;
+  position: fixed;
+  left: 1vw; 
+  border-radius: 10%;
+  bottom: 1vh;  
+  background-color: var(--primary-white-color);  
+  border: 3px solid var( --third-blue-color); 
+}
+
+#footerIconContainer:hover {
+  box-shadow: -5px 5px 5px var(--primary-white-color);
+}
+
+#footerIcon {
+  width: 90%
+}
+
+#footerExitIcon:hover {
+  border: 2px solid var(--primary-blue-color);
+  box-shadow: -1px 10px 5px var(--secondary-blue-color);
+}
+
+/*Runlog footer End*/
 
 
 /*RunLog Sorting Modal Begin*/
@@ -86,7 +183,7 @@
 
 /*More Info Component Begin*/
 
-#runLogMoreInfoContentContainer {
+.runLogMoreInfoContentContainer {
   height: 100vh;
   display: flex;   
   justify-content: center;
@@ -95,9 +192,10 @@
   background-color: var(--primary-slate-color);
 }
 
-#runlogMoreInfoBox {
+.runlogMoreInfoBox {
   background-color: var(--primary-blue-color);
   min-width: 70%;
+  max-width: 90%;
   min-height: 80%;
   display: flex; 
   flex-wrap: wrap;
@@ -119,59 +217,12 @@
   font-size: small;
 }
 
-#runlogMoreInfoButtonContainer {
-  margin: 5%; 
+.runlogMoreInfoButtonContainer {
+  margin: 1vh; 
 }
 
 /*More Info Component End*/
 
-
-/* Runlog table Begin*/
-
-#runLogTableHeader {
-  padding-top: 40px;
-  display: grid;
-  grid-template-columns: 2.5% 18% 14% 18% 18% 16% 2.5%;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  background-color: var(--primary-slate-color);
-  font-size: small;  
-}
-
-#runLogBodyContainer {
-  padding-top: 75px;
-}
-
-#runLogBody {
-  display: grid;
-  grid-template-columns: 2.5% 18% 14% 18% 18% 16% 2.5%;
-  font-size: small;
-  width: 100vw;
-  align-items: center;
-  margin-bottom: 1px;
-}
-
-#runLogBody:nth-child(odd) {
-  background: var(--primary-blue-color);
-}
-
-#runLogBody:nth-child(even) {
-  background: var(--secondary-blue-color);
-}
-
-#runLogBody:hover {
-  background: var(--third-blue-color);
-}
-
-.expandIcon:hover {
-  border-color: var(--primary-white-color);
-  border-style: solid;
-  border-width: 1px;
-}
-
-
-/*Runlog table End*/
 
 
 /* Begin New Run Component */

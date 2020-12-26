@@ -2,6 +2,13 @@
 
 [Demo App Now Online!](https://kind-forest-04b815c1e.azurestaticapps.net/)
 
+12/26: 
+
+<p>Working on a footer and About component</p>
+
+<p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/footerGif.gif" /></p>
+
+
 
 12/22
 

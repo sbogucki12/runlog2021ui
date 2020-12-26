@@ -1,0 +1,42 @@
+@import '../runLog/runLog.css';
+
+#aboutContentContainer {
+    width: 90%; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutIconContainer {
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;  
+    padding: 5%;     
+}
+
+#aboutContentBio {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutContentImageContainer {
+    display: flex; 
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutContentBioContainer {
+    display: flex; 
+    margin-right: -10%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    flex-direction: column;
+}

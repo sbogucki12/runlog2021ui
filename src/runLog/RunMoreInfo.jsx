@@ -11,8 +11,8 @@ function RunMoreInfo(props) {
 	return (
 		<div>
 			<RunLogHeader />
-			<div id="runLogMoreInfoContentContainer">
-				<div id="runlogMoreInfoBox">
+			<div className="runLogMoreInfoContentContainer">
+				<div className="runlogMoreInfoBox">
 					<table id="runlogMoreInfoTable">
 						<tbody>
 							<tr>
@@ -72,7 +72,7 @@ function RunMoreInfo(props) {
 							</tr>
 						</tbody>
 					</table>
-					<div id="runlogMoreInfoButtonContainer">
+					<div className="runlogMoreInfoButtonContainer">
 						<Link to="/runlog">
 							<button>{`<--`}</button>
 						</Link>
