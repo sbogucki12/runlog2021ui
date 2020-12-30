@@ -2,6 +2,12 @@
 
 [Demo App Now Online!](https://kind-forest-04b815c1e.azurestaticapps.net/)
 
+12/30: 
+
+<p>Added some quick Error Handling</p>
+
+<p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/errorGif.gif" /></p>
+
 12/26: 
 
 <p>Working on a footer and About component</p>

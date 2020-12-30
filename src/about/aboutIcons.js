@@ -1,4 +1,4 @@
-import { faInstagramSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'; 
+import { faInstagramSquare, faLinkedin, faTwitterSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons'; 
 
 const aboutIcons = [
     {
@@ -12,6 +12,10 @@ const aboutIcons = [
     {
         id: "devbogoodskiTwitter",
         icon: faTwitterSquare
+    },
+    {
+        id: "githubBogoodski",
+        icon: faGithubSquare
     },
     {
         id: "devbogoodskiIG",

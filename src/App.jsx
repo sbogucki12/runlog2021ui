@@ -37,7 +37,7 @@ function App() {
 					<RunLogHome data={runs} />
 				</Route>
 				<Route path="/:id" children={<RunMoreInfo data={data} />} />
-				<Route exact path="/" children={<Landing data={data} />} />
+				<Route path="/" children={<Landing data={data} />} />
 			</Switch>
 		);
 	}

@@ -35,7 +35,8 @@ function AboutContent() {
 				<div><FontAwesomeIcon icon={aboutIcons[0].icon} /></div>
 				<div><FontAwesomeIcon icon={aboutIcons[1].icon} /></div>
 				<div><FontAwesomeIcon icon={aboutIcons[2].icon} /></div>
-				<div><FontAwesomeIcon icon={aboutIcons[3].icon} /></div>
+                <div><FontAwesomeIcon icon={aboutIcons[3].icon} /></div>
+				<div><FontAwesomeIcon icon={aboutIcons[4].icon} /></div>
 			</div>
 		</div>
 	);
