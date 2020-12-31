@@ -9,7 +9,7 @@ function AboutContent() {
             <div id="aboutTitleContainer">
 				<FontAwesomeIcon icon={faIdCardAlt} size="3x" id="aboutTitle" />
 			</div>
-			<div id="aboutContentBio">
+			<div className="aboutContentBio">
 				<div id="aboutContentImageContainer">
                  <div>
 					 <img src="/images/steveAndDania.jpg" 
@@ -18,8 +18,8 @@ function AboutContent() {
 						 id="steveAndDaniaImage" />
 				 </div>
                 </div>
-				<div id="aboutContentBioContainer">
-					<p><b>www.DailyRun.net</b> owned by <a href="https://www.instagram.com/devbogoodski/" target="_blank" rel="noreferrer noopener">Steve B</a>,.
+				<div className="aboutContentBioContainer">
+					<p><b>www.DailyRun.net</b> owned by <a href="https://www.instagram.com/devbogoodski/" target="_blank" rel="noreferrer noopener">Steve B</a>.
                     </p>
 					<p>Steve B., currently leads a cross-functional development team at{' '} 
 						<a href="https://www.linkedin.com/company/yona-brixtel/" target="_blank" rel="noreferrer noopener">Yona-Brixtel</a>,
@@ -38,6 +38,11 @@ function AboutContent() {
 					<div><a href="https://bogoodski.medium.com/the-future-of-federal-safety-oversight-6992b3012740" target="_blank" rel="noreferrer noopener">"The Future of Federal Safety Oversight"</a></div>
 					<div><a href="https://medium.com/swlh/migrating-from-mongodb-to-sql-b2d91d13c30d?source=friends_link&sk=7420676c3fbb0cfbb94dfb1e9cc02ccd" target="_blank" rel="noreferrer noopener">"Migrating From MongoDB to SQL"</a></div>
 				</div>				
+			</div>
+			<div id="aboutArchiveTextContainer">
+				<div>
+					<b>This is the second version of the run log.</b> The original is archived <a href="https://bogoodski2019.azurewebsites.net/runlog/" target="_blank" rel="noreferrer noopener">HERE</a>.
+				</div> 
 			</div>
 			<div id="aboutIconContainer">
 				<div><a href="https://www.instagram.com/bogoodskiruns/" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={aboutIcons[0].icon} /></a></div>

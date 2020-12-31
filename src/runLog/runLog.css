@@ -83,7 +83,7 @@
 #runlogFooter {
   position: fixed;
   left: 0;
-  bottom:0;  
+  bottom:0;   
 }
 
 #runlogFooterContainer {
@@ -95,6 +95,7 @@
   align-items: center;
   border-top: 3px solid var(--primary-blue-color);
   background: var(--primary-white-color);
+  padding: 2px;
 }
 
 #footerIconContainer {
@@ -113,6 +114,10 @@
 
 #footerIcon {
   width: 90%
+}
+
+#footerExitIcon {
+  margin-right: 2vh;
 }
 
 #footerExitIcon:hover {
@@ -220,7 +225,7 @@
 }
 
 .runlogMoreInfoButtonContainer {
-  margin: 1vh; 
+  margin: 1vh;   
 }
 
 /*More Info Component End*/

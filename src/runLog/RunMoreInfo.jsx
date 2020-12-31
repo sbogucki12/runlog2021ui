@@ -1,7 +1,10 @@
 import { useParams, Link } from 'react-router-dom';
 import RunLogHeader from './RunLogHeader';
 import './runLog.css';
-import ErrorComponent from '../utilities/ErrorComponent';
+import ErrorComponent from '../components/ErrorComponent';
+import CustomButton from '../components/CustomButton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons';
 
 function RunMoreInfo(props) {
 	let { id } = useParams();
@@ -75,7 +78,9 @@ function RunMoreInfo(props) {
 						</table>
 						<div className="runlogMoreInfoButtonContainer">
 							<Link to="/runlog">
-								<button>{`<--`}</button>
+								<CustomButton>
+									<FontAwesomeIcon icon={faArrowAltCircleLeft} />
+								</CustomButton>
 							</Link>
 						</div>
 					</div>
@@ -83,13 +88,13 @@ function RunMoreInfo(props) {
 			</div>
 		);
 	} catch (error) {
-		return (			
+		return (
 			<div>
 				{console.log(`error ${error}`)}
 				<ErrorComponent />
-			</div>)
+			</div>
+		);
 	}
-	
 }
 
 export default RunMoreInfo;

@@ -1,5 +1,6 @@
 import './runLog.css';
 import { Link } from 'react-router-dom';
+import CustomButton from '../components/CustomButton';
 
 function RunLogFooter (props) {
     return (
@@ -7,9 +8,9 @@ function RunLogFooter (props) {
             <div id="runlogFooterContainer">
                 <div>
                     <Link to="/about">
-                        <button>
+                        <CustomButton>
                             About
-                        </button>
+                        </CustomButton>
                     </Link>
                 </div>
                 <div onClick={() => props.setShowFooter(false)}>

@@ -7,6 +7,7 @@ import RunLogHome from './runLog/RunLogHome';
 import RunMoreInfo from './runLog/RunMoreInfo';
 import Landing from './landing/Landing';
 import useGetRuns from './runLog/useGetRuns.js';
+import ErrorComponent from './components/ErrorComponent';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
 				</Route>
 				<Route path="/:id" children={<RunMoreInfo data={data} />} />
 				<Route path="/" children={<Landing data={data} />} />
+				<Route component={ErrorComponent}/>
 			</Switch>
 		);
 	}

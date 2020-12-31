@@ -8,6 +8,11 @@
     justify-content: center;    
 }
 
+#aboutContentContainer a {
+    color: var(--primary-white-color);
+    text-decoration: none;
+}
+
 #aboutTitleContainer {
     width: 100%;
     margin-top: 2vh;
@@ -30,7 +35,7 @@
 
 #aboutAticlesContainer{
     display: flex; 
-    justify-content: start;
+    justify-content: flex-start;
     align-items: space-between;
     flex-direction: column;
     text-align: start;
@@ -46,8 +51,7 @@
     align-items: center;
     justify-content: space-evenly;          
     margin-left: 10%;
-    padding: 5%;
-    margin-top: 1vh;
+    padding: 5%;    
     color: black;   
 }
 
@@ -56,7 +60,15 @@
     font-size: xx-large;
 }
 
-#aboutContentBio {
+#aboutIconContainer a:hover {
+    box-shadow: -5px 10px 7px var(--primary-white-color);
+    background-color: var(--primary-blue-color);
+    padding: 0; 
+    margin: 0;
+    border: 5px solid var(--primary-blue-color)
+}
+
+.aboutContentBio {
     display: flex; 
     flex-direction: row;
     align-items: center;
@@ -70,11 +82,24 @@
     justify-content: center;
 }
 
-#aboutContentBioContainer {
+.aboutContentBioContainer {
     display: flex; 
     margin-right: -10%;
     align-items: flex-start;
     justify-content: flex-start;
     text-align: left;
     flex-direction: column;
+}
+
+#aboutArchiveTextContainer {
+    display: flex; 
+    text-align: center;
+    width: 100%; 
+    margin-left: 5%; 
+    justify-content: center;
+    padding-top: 1vw;
+    font-size: xx-small;
+    align-items: center;
+    align-content: center;
+    margin-top: 2vw;
 }

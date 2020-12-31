@@ -1,6 +1,7 @@
 import './landing.css';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import CustomButton from '../components/CustomButton';
 
 function Landing(props) {
 	const [count, setCount] = useState(640);
@@ -21,7 +22,7 @@ function Landing(props) {
 					<p>Currently {count} consecutive daily runs</p>
 					<p>And counting!</p>
 					<Link to="/runlog">
-						<button>Enter</button>{' '}
+						<CustomButton>Enter</CustomButton>{' '}
 					</Link>
 			</div>
 	}

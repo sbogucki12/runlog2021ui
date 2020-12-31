@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+#backButton {
+    background-color: var(--primary-blue-color);   
+    font-family: 'Anton', sans-serif; 
+}
+
+#backButton:hover {
+    box-shadow: -5px 10px 10px var(--primary-slate-color);
+}
