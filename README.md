@@ -4,9 +4,13 @@
 
 12/30: 
 
-<p>Added some quick Error Handling</p>
+<ul>
+<li>Added some quick Error Handling</li>
+<li>Worked on About component </li>
+</ul>
 
 <p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/errorGif.gif" /></p>
+<p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/aboutPage.jpg" /></p>
 
 12/26: 
 

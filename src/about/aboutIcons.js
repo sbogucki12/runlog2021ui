@@ -16,10 +16,6 @@ const aboutIcons = [
     {
         id: "githubBogoodski",
         icon: faGithubSquare
-    },
-    {
-        id: "devbogoodskiIG",
-        icon: faInstagramSquare
     }
 ];
 

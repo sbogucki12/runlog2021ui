@@ -184,7 +184,7 @@
 /*More Info Component Begin*/
 
 .runLogMoreInfoContentContainer {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;   
   justify-content: center;
   align-items: center;
@@ -198,7 +198,7 @@
   max-width: 90%;
   min-height: 80%;
   display: flex; 
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
@@ -207,6 +207,8 @@
   border-width: 5px;
   border-radius: 5%;
   box-shadow: -5px 5px 5px var(--primary-white-color);
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .runlogMoreInfoLabel {
