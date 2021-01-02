@@ -1,0 +1,7 @@
+{	"platformErrorOverrides": [
+		{
+			"errorType": "NotFound",
+			"serve": "/index.html"
+		}
+	]
+}
