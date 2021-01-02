@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 #runlog {
   background-color: var(--primary-slate-color);  
 }
@@ -235,10 +237,19 @@
 /* Begin New Run Component */
 
 #newRunContainer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100vw;
+  font-family: 'Staatliches', cursive;
+}
+
+#newRunAuthExitIconContainer {
+  width: 95%;
+  display: flex; 
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+#newRunAuthExitIcon {
+  text-align: end;
+  text-decoration: none;
 }
 
 /* End New Run Component */

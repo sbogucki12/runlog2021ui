@@ -4,9 +4,15 @@
 
 1/2/2021: 
 
-<p>Added a routes.json file to the public folder to resolve a bug where Azure displayed a 404 message when the app was refreshed.</p>
+<ul>
+<li>Added a routes.json file to the public folder to resolve a bug where Azure displayed a 404 message when the app was refreshed.</li>
+<li>
+Styled the auth page for the admin component. 
+</li>
+</ul>
 
 <p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/routesJson.jpg" /></p>
+<p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/authStylingGif.gif" /></p>
 
 12/30: 
 

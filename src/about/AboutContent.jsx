@@ -6,8 +6,8 @@ import aboutIcons from './aboutIcons';
 function AboutContent() {
 	return (
 		<div id="aboutContentContainer">
-            <div id="aboutTitleContainer">
-				<FontAwesomeIcon icon={faIdCardAlt} size="3x" id="aboutTitle" />
+            <div className="aboutTitleContainer">
+				<FontAwesomeIcon icon={faIdCardAlt} size="3x" className="aboutTitle" />
 			</div>
 			<div className="aboutContentBio">
 				<div id="aboutContentImageContainer">
