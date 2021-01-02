@@ -2,6 +2,12 @@
 
 [Demo App Now Online!](https://kind-forest-04b815c1e.azurestaticapps.net/)
 
+1/2/2021: 
+
+<p>Added a routes.json file to the public folder to resolve a bug where Azure displayed a 404 message when the app was refreshed.</p>
+
+<p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/routesJson.jpg" /></p>
+
 12/30: 
 
 <ul>
