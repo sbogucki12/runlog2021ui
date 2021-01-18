@@ -17,6 +17,7 @@ function NewRunForm() {
 		runListenedTo: '',
 		runTemperature: undefined,
 		runShoeAge: undefined,
+		runStartTime: undefined
 		//runImage: ""
 	});
 
@@ -39,10 +40,12 @@ function NewRunForm() {
 			SleepWakeTime: value.runDate.toString() + 'T' + value.runSleepWakeTime.toString(),
 			RunListenedTo: value.runListenedTo.toString(),
 			Temperature: Number(value.runTemperature),
-			ShoeAge: Number(value.runShoeAge)
+			ShoeAge: Number(value.runShoeAge),
+			StartTime: value.runDate.toString() + 'T' + value.runStartTime.toString()
 			//ImageUrl: null
 		};
-		const result = await fetchPostRun(url, body);
+		return await fetchPostRun(url, body);
+		
 	}
 
 	const list = fields.map((field) => (

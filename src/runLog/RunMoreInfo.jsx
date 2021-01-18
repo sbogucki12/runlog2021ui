@@ -60,6 +60,10 @@ function RunMoreInfo(props) {
 									<td>{run.sleepWakeTime.substr(11, 5)}</td>
 								</tr>
 								<tr>
+									<td className="runlogMoreInfoLabel">Run Start (Time of Day): </td>
+									<td>{run.startTime.substr(11, 5)}</td>
+								</tr>
+								<tr>
 									<td className="runlogMoreInfoLabel">Shoe Age (days): </td>
 									<td>{run.shoeAge}</td>
 								</tr>

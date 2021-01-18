@@ -2,6 +2,24 @@
 
 [Demo App Now Online!](https://kind-forest-04b815c1e.azurestaticapps.net/)
 
+
+1/17/2021: 
+
+<p>Added a column to the DB and a field to the UI to track the time in the day I start my run</p>
+
+<p><b>Form to Add New Run (before):</b></p>
+<p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/newRunBefore.jpg" /></p>
+
+<p><b>Form to Add New Run (after):</b></p>
+<p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/newRunAfter.jpg" /></p>
+
+<p><b>Run Log More Info (before):</b></p>
+<p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/runClassBefore.jpg" /></p>
+
+<p><b>Run Log More Info (after):</b></p>
+<p><img src="https://raw.githubusercontent.com/sbogucki12/runlog2021ui/main/runClassAfter.jpg" /></p>
+
+
 1/2/2021: 
 
 <ul>
@@ -84,9 +102,7 @@ Styled the auth page for the admin component.
 
 
 
-## To Do 
 
-[ x ] - Fix Bug in "More Info" button, Run Log Table
 
 
 # Getting Started with Create React App

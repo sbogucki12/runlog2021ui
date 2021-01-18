@@ -34,19 +34,19 @@ const fields = [
         title: "Hours of Sleep", 
         type: "number",        
         name: "runSleepHours",
-        width: "15vw"        
+        width: "7vw"        
     }, 
     {
         title: "Sleep - Time to Bed", 
         type: "text",        
         name: "runSleepToBedTime",
-        width: "40vw"
+        width: "10vw"
     }, 
     {
         title: "Sleep - Time Awake", 
         type: "text",        
         name: "runSleepWakeTime",
-        width: "40vw"
+        width: "10vw"
     }, 
     {
         title: "Background Playlist", 
@@ -65,6 +65,12 @@ const fields = [
         type: "number",        
         name: "runShoeAge",
         width: "5vw"
+    },
+    {
+        title: "Start Time", 
+        type: "text",        
+        name: "runStartTime",
+        width: "10vw"
     }
 
     /*{
