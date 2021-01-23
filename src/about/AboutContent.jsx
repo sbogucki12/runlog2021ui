@@ -34,6 +34,7 @@ function AboutContent() {
 			<div>
 				<h4>Articles:</h4>
 				<div id="aboutAticlesContainer">
+				<div><a href="https://bogoodski.medium.com/cloud-based-system-architecture-for-the-federal-domain-ec77d12e4608" target="_blank" rel="noreferrer noopener">"Cloud-Based System Architecture for the Federal Domain"</a></div>
 					<div><a href="https://medium.com/digital-diplomacy/agile-software-development-in-the-federal-government-domain-c6fa87b7569d?source=friends_link&sk=66a9aa487362de98783b8535b824baa0" target="_blank" rel="noreferrer noopener">"Agile Software Development in the Federal Government Domain"</a></div>
 					<div><a href="https://bogoodski.medium.com/the-future-of-federal-safety-oversight-6992b3012740" target="_blank" rel="noreferrer noopener">"The Future of Federal Safety Oversight"</a></div>
 					<div><a href="https://medium.com/swlh/migrating-from-mongodb-to-sql-b2d91d13c30d?source=friends_link&sk=7420676c3fbb0cfbb94dfb1e9cc02ccd" target="_blank" rel="noreferrer noopener">"Migrating From MongoDB to SQL"</a></div>
