@@ -1,8 +1,8 @@
 const constants = {    
     POSTPWDEVURL: 'http://localhost:51563/api/authentication',
-    POSTPWDPRODURL: 'https://runlog2021api.azurewebsites.net/api/authentication',
+    POSTPWDPRODURL: '',
     RUNSAPIDEV: 'http://localhost:51563/api/run/', 
-    RUNSAPIPROD: 'https://runlog2021api.azurewebsites.net/api/run/'   
+    RUNSAPIPROD: ''   
 };
 
 export default constants; 
